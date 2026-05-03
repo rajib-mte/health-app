@@ -32,7 +32,7 @@ class HomePage extends StatelessWidget {
       body: ListView(
         padding: EdgeInsets.all(14),
         children: [
-          // Upcoming card
+          // Upcoming card *
           const UpcomingCard(),
           const SizedBox(height: 20,),
           Text("Health Needs", style: Theme.of(context).textTheme.titleLarge,),
