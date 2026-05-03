@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:healthapp/screens/health_needs.dart';
+import 'package:healthapp/widgets/nearby_doctors.dart';
 import 'package:healthapp/widgets/upcoming_card.dart';
 import 'package:ionicons/ionicons.dart';
 
@@ -35,11 +36,14 @@ class HomePage extends StatelessWidget {
           const UpcomingCard(),
           const SizedBox(height: 20,),
           Text("Health Needs", style: Theme.of(context).textTheme.titleLarge,),
-
+          const SizedBox(height: 15,),
           // Health Needs
-          HealthNeeds(),
-
+          const HealthNeeds(),
+          const SizedBox(height: 15,),
           // Nearby doctors
+          Text("Nearby Doctors", style: Theme.of(context).textTheme.titleLarge,),
+          SizedBox(height: 15,),
+          const NearbyDoctors(),
         ],
       ),
       bottomNavigationBar: BottomNavigationBar(

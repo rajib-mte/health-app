@@ -23,17 +23,13 @@ class HealthNeeds extends StatelessWidget {
               padding: EdgeInsets.all(15),
               decoration: BoxDecoration(
                 shape: BoxShape.circle,
-                color: Theme
-                    .of(
+                color: Theme.of(
                   context,
-                )
-                    .colorScheme
-                    .primaryContainer
-                    .withOpacity(0.4),
+                ).colorScheme.primaryContainer.withOpacity(0.4),
               ),
               child: Image.asset(customIcons[index].icon),
             ),
-            const SizedBox(height: 6,),
+            const SizedBox(height: 6),
             Text(customIcons[index].name),
           ],
         );
@@ -42,13 +38,9 @@ class HealthNeeds extends StatelessWidget {
   }
 }
 
-
 class CustomIcon {
   final String icon;
   final String name;
 
-  CustomIcon({
-    required this.icon,
-    required this.name,
-  });
+  CustomIcon({required this.icon, required this.name});
 }
